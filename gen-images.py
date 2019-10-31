@@ -26,7 +26,7 @@ def create_image_file(x, y):
     dirname.mkdir(exist_ok=True)
     im.save(dirname / 'img_{}_{}.png'.format(x, y), format='png')
 
-for _ in range(180):
+for _ in range(300):
     x = floor(random.uniform(0, W))
     y = floor(random.uniform(0, H))
     create_image_file(x, y)
